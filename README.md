@@ -15,16 +15,4 @@ npm install
 npm run setup      # once: creates .env, the database, tables and demo data
 npm run dev        # starts backend (:4000) and frontend (:5173) together
 ```
-If your MySQL user has a password, set `DB_USER` / `DB_PASSWORD` in `.env` (created by the first `npm run setup`, which stops with a hint if it cannot connect) and run `npm run setup` again.
-Open http://localhost:5173. Demo logins (password `Demo1234!`): `admin@jobportal.test`, `employer1@jobportal.test`, `seeker1@jobportal.test`.
-Emails (verification, password reset) are printed in the terminal when `SMTP_HOST` is empty.
 
-## Quality commands
-`npm run lint` · `npm run typecheck` · `npm test` · `npm run build`
-Database workflow test: `RUN_DB_TESTS=1 npm test -w backend` (against a disposable database).
-
-## Production
-See `docs/DEPLOYMENT.md` (build, migrate, start).
-
-## Docs
-`docs/ARCHITECTURE.md` · `docs/API.md` · `docs/SECURITY.md` · `docs/DEPLOYMENT.md` · `docs/TESTING.md`
